@@ -1,15 +1,11 @@
 import React from 'react';
-import Navbar from "./components/Navbar";
-import JumboTron from "./components/JumboTron";
-import PlayingField from "./components/PlayingField";
+import Game from "./components/Game";
+
 
 function App() {
     return (
         <div className="container">
-            <Navbar />
-            <JumboTron />
-            <PlayingField />
-
+            <Game />
         </div>
     )
 }
