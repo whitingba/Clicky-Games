@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="#">Clicky Games</a>
@@ -15,12 +15,10 @@ const Navbar = () => {
                     </li>
 
                 </ul>
-                <span className="navbar-text">
-                    Your Score: |
-          </span>
-                <span className="navbar-text">
-                    | Top Score:
-          </span>
+                <span className="navbar-text scores">
+                    Your Score: {props.score} Top Score: {props.topScore}
+                </span>
+
             </div>
         </nav>
     );
